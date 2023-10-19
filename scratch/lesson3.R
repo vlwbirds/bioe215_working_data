@@ -113,11 +113,59 @@ surveys %>%
 
 # Q8: Use group_by() and summarize() to find the mean, min, and max hindfoot length for each species (using species_id). Also add the number of observations (hint: see ?n).
 surveys %>% 
-  filter(!is.na(hindfoot_length))
+  filter(!is.na(hindfoot_length)) %>% 
   group_by(species_id) %>% 
   summarize(mean_hind = mean(hindfoot_length),
             min_hind = min(hindfoot_length),
             max_hind = max(hindfoot_length),
             n(),
             .groups = "drop")
-# Q9: What was the heaviest animal measured in each year? Return the columns year, genus, species_id, and weight.
+
+# Q9 What was the heaviest animal measured in each year? Return the columns year, genus, species_id, and weight.
+surveys %>% 
+  filter(!is.na(weight)) %>% 
+  group_by(year) %>%
+  slice_max(order_by = weight) %>% 
+  select(year, genus, species_id, weight) %>% 
+  arrange(year, desc(weight)) %>% 
+  ungroup()
+  
+# Joining Data
+
+count(surveys, taxa)
+taxa_iucn <- data.frame(
+  taxa = c("Bird", "Rabbit", "Rodent"),
+  iucn = c("NT", "LC", "LC")
+)
+taxa_iucn
+  
+surveys_iucn <- left_join(surveys, taxa_iucn, by = "taxa")
+head(surveys_iucn)
+  
+# Q10: How many records were there for NT and LC taxa?
+
+count(surveys_iucn, iucn)
+
+# Q11: What kind of taxa do the NAs in iucn correspond to?
+
+count(surveys_iucn, iucn, taxa)
+
+# Q12: How many rows are in surveys_iucn2? What rows are in surveys_iucn that aren’t in surveys_iucn2?
+
+surveys_iucn2 <- inner_join(surveys, taxa_iucn, by = "taxa")  
+surveys_iucn2 # number of rows is 34,772
+surveys_iucn # this object doesn't have reptiles
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
