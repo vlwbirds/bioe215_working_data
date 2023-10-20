@@ -1,0 +1,31 @@
+# The Breeding Phenology of Boreal Birds
+
+```{r}
+library(tidyverse)
+library(here)
+```
+
+## Data Downloads
+
+Data from: Shifts in timing and duration of breeding for 73 boreal bird species over four decades
+
+```{r}
+download.file("https://dryad-assetstore-merritt-west.s3.us-west-2.amazonaws.com/ark%3A/13030/m5867r6c%7C1%7Cproducer/73_species.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2KERHV5E3OITXZXC%2F20231019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231019T213852Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=277d5265a2286c5d38f2863a2fe1437363173d1fa0c762ff6d4b7a8fb45adacc",
+              "data/73_species.csv")
+a73_species <- read_csv("https://dryad-assetstore-merritt-west.s3.us-west-2.amazonaws.com/ark%3A/13030/m5867r6c%7C1%7Cproducer/73_species.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2KERHV5E3OITXZXC%2F20231019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231019T213852Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=277d5265a2286c5d38f2863a2fe1437363173d1fa0c762ff6d4b7a8fb45adacc")
+write.csv(a73_species, file = "data/73_species.csv", row.names = FALSE)
+```
+
+```{r}
+here()
+bor_nestlings <- read_csv(here("data/73_species.csv"))
+bor_nestlings
+
+bor_traits <- read_csv(here("data/Traits_73_species.csv"))
+bor_traits
+
+?readxl::read_excel
+avonet <- readxl::read_excel(here("data/AVONET Supplementary dataset 1.xlsx"), 
+                             sheet = "AVONET1_BirdLife")
+avonet
+```
