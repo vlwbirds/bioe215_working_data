@@ -11,21 +11,133 @@ Data from: Shifts in timing and duration of breeding for 73 boreal bird species 
 
 ```{r}
 download.file("https://dryad-assetstore-merritt-west.s3.us-west-2.amazonaws.com/ark%3A/13030/m5867r6c%7C1%7Cproducer/73_species.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2KERHV5E3OITXZXC%2F20231019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231019T213852Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=277d5265a2286c5d38f2863a2fe1437363173d1fa0c762ff6d4b7a8fb45adacc",
-              "data/73_species.csv")
-a73_species <- read_csv("https://dryad-assetstore-merritt-west.s3.us-west-2.amazonaws.com/ark%3A/13030/m5867r6c%7C1%7Cproducer/73_species.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2KERHV5E3OITXZXC%2F20231019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231019T213852Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=277d5265a2286c5d38f2863a2fe1437363173d1fa0c762ff6d4b7a8fb45adacc")
-write.csv(a73_species, file = "data/73_species.csv", row.names = FALSE)
+              here("data/73_species.csv"))
 ```
 
 ```{r}
-here()
 bor_nestlings <- read_csv(here("data/73_species.csv"))
-bor_nestlings
 
 bor_traits <- read_csv(here("data/Traits_73_species.csv"))
-bor_traits
 
-?readxl::read_excel
 avonet <- readxl::read_excel(here("data/AVONET Supplementary dataset 1.xlsx"), 
                              sheet = "AVONET1_BirdLife")
-avonet
+```
+
+## Are nestlings showing up earlier in the year over time?
+
+```{r}
+all_birds_trend <- bor_nestlings %>% 
+  group_by(Year) %>% 
+  summarize(mean_doy = mean(Dayofyear))
+
+ggplot(all_birds_trend, aes(Year, mean_doy)) + 
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+## Breakdown by species
+
+```{r}
+species_trends <- bor_nestlings %>% 
+  group_by(Year, Species) %>% 
+  summarize(mean_doy = mean(Dayofyear),
+            .groups = "drop")
+
+ggplot(species_trends, aes(Year, mean_doy, color = Species)) + 
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+Looking pretty useless for data presentation
+
+How about only 5 species?
+
+```{r}
+data_richness <- bor_nestlings %>% 
+  count(Species)
+
+most_rich <- data_richness %>% 
+  arrange(desc(n)) %>% 
+  slice(1:5)
+
+most_rich_trends <- bor_nestlings %>% 
+  filter(Species %in% most_rich$Species) %>% 
+  group_by(Species, Year) %>% 
+  summarize(mean_doy = mean(Dayofyear), 
+            .groups = "drop")
+?aes
+ggplot(most_rich_trends, aes(Year, mean_doy, color = Species)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+A general pattern, with one conflicting example. What species have the strongest trends?
+
+```{r}
+# Finds the slope of the relationship between y and x
+trend <- function(x, y) {
+  xy_lm <- lm(y ~ x)
+  coef(xy_lm)[2]
+}
+
+# Calculate the trend for all species
+bor_by_year <- bor_nestlings %>% 
+  group_by(Year, Species) %>% 
+  summarize(BirdByYear = n()) %>% 
+  ungroup()
+bor_by_year
+
+bor_trends <- species_trends %>% 
+  group_by(Species) %>% 
+  summarize(doy_trend = trend(Year, mean_doy))
+
+soi <- c("ARDCIN", "LARMIN")
+species_trends %>% 
+  filter(Species %in% soi) %>% 
+  ggplot(aes(Year, mean_doy, color = Species)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+
+```
+
+Find the species with the most positive and most negative trends, then plot just those.
+
+```{r}
+nrow_bor_trends <- nrow(bor_trends) # Use this later
+bor_extreme <- bor_trends %>% 
+  arrange(desc(doy_trend)) %>%   # Sort by the day of year trend
+  slice(c(1,nrow_bor_trends))   # Keep just the first (most negative trend) and last (most positive trend) rows
+bor_extreme
+
+?`%in%`
+# Now plot them
+bor_extreme2 <- c("RIPRIP", "ARDCIN")
+species_trends %>% 
+  filter(Species %in% bor_extreme$Species) %>% 
+  ggplot(aes(Year, mean_doy, color = Species)) + 
+    geom_point() +
+    geom_smooth(method = "lm")
+```
+
+## Adding in AVONET
+
+```{r}
+# First, select and rename important columns
+avonet_size <- select(avonet, SciName = Species1, Mass_g = Mass)
+bor_sciname <- select(bor_traits, 
+                      Species = Abbreviation, 
+                      SciName = "Scientific name")
+
+
+bor_trends_size <- bor_trends %>% 
+  left_join(bor_sciname, by = "Species") %>% 
+  left_join(avonet_size, by = "SciName") %>% 
+  mutate(abs_trend = abs(doy_trend))
+
+?left_join
+# Plot it
+ggplot(bor_trends_size, aes(Mass_g, abs_trend)) +
+  geom_point() +
+  geom_smooth(method = "lm")
 ```
