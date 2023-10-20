@@ -1,0 +1,611 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;&lt;head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;meta charset="utf-8"&gt;</p>
+<p class="p1">&lt;meta name="generator" content="quarto-1.3.433"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;title&gt;index&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">code{white-space: pre-wrap;}</p>
+<p class="p1">span.smallcaps{font-variant: small-caps;}</p>
+<p class="p1">div.columns{display: flex; gap: min(4vw, 1.5em);}</p>
+<p class="p1">div.column{flex: auto; overflow-x: auto;}</p>
+<p class="p1">div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}</p>
+<p class="p1">ul.task-list{list-style: none;}</p>
+<p class="p1">ul.task-list li input[type="checkbox"] {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 0.8em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>vertical-align: middle;</p>
+<p class="p1">}</p>
+<p class="p1">/* CSS for syntax highlighting */</p>
+<p class="p1">pre &gt; code.sourceCode { white-space: pre; position: relative; }</p>
+<p class="p1">pre &gt; code.sourceCode &gt; span { display: inline-block; line-height: 1.25; }</p>
+<p class="p1">pre &gt; code.sourceCode &gt; span:empty { height: 1.2em; }</p>
+<p class="p1">.sourceCode { overflow: visible; }</p>
+<p class="p1">code.sourceCode &gt; span { color: inherit; text-decoration: inherit; }</p>
+<p class="p1">div.sourceCode { margin: 1em 0; }</p>
+<p class="p1">pre.sourceCode { margin: 0; }</p>
+<p class="p1">@media screen {</p>
+<p class="p1">div.sourceCode { overflow: auto; }</p>
+<p class="p1">}</p>
+<p class="p1">@media print {</p>
+<p class="p1">pre &gt; code.sourceCode { white-space: pre-wrap; }</p>
+<p class="p1">pre &gt; code.sourceCode &gt; span { text-indent: -5em; padding-left: 5em; }</p>
+<p class="p1">}</p>
+<p class="p1">pre.numberSource code</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ counter-reset: source-line 0; }</p>
+<p class="p1">pre.numberSource code &gt; span</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ position: relative; left: -4em; counter-increment: source-line; }</p>
+<p class="p1">pre.numberSource code &gt; span &gt; a:first-child::before</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ content: counter(source-line);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative; left: -1em; text-align: right; vertical-align: baseline;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: none; display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-touch-callout: none; -webkit-user-select: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-khtml-user-select: none; -moz-user-select: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-ms-user-select: none; user-select: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 0 4px; width: 4em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">pre.numberSource { margin-left: 3em;<span class="Apple-converted-space">  </span>padding-left: 4px; }</p>
+<p class="p1">div.sourceCode</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{ <span class="Apple-converted-space">  </span>}</p>
+<p class="p1">@media screen {</p>
+<p class="p1">pre &gt; code.sourceCode &gt; span &gt; a:first-child::before { text-decoration: underline; }</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script src="index_files/libs/clipboard/clipboard.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="index_files/libs/quarto-html/quarto.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="index_files/libs/quarto-html/popper.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="index_files/libs/quarto-html/tippy.umd.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="index_files/libs/quarto-html/anchor.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"&gt;</p>
+<p class="p1">&lt;script src="index_files/libs/bootstrap/bootstrap.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body class="fullcontent"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="quarto-content" class="page-columns page-rows-contents page-layout-article"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;main class="content" id="quarto-document-content"&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section id="the-breeding-phenology-of-boreal-birds" class="level1"&gt;</p>
+<p class="p1">&lt;h1&gt;The Breeding Phenology of Boreal Birds&lt;/h1&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb1"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb1-1"&gt;&lt;a href="#cb1-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;library&lt;/span&gt;(tidyverse)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──</p>
+<p class="p1">✔ dplyr <span class="Apple-converted-space">    </span>1.1.3 <span class="Apple-converted-space">    </span>✔ readr <span class="Apple-converted-space">    </span>2.1.4</p>
+<p class="p1">✔ forcats <span class="Apple-converted-space">  </span>1.0.0 <span class="Apple-converted-space">    </span>✔ stringr <span class="Apple-converted-space">  </span>1.5.0</p>
+<p class="p1">✔ ggplot2 <span class="Apple-converted-space">  </span>3.4.3 <span class="Apple-converted-space">    </span>✔ tibble<span class="Apple-converted-space">    </span>3.2.1</p>
+<p class="p1">✔ lubridate 1.9.2 <span class="Apple-converted-space">    </span>✔ tidyr <span class="Apple-converted-space">    </span>1.3.0</p>
+<p class="p1">✔ purrr <span class="Apple-converted-space">    </span>1.0.2<span class="Apple-converted-space">     </span></p>
+<p class="p1">── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──</p>
+<p class="p1">✖ dplyr::filter() masks stats::filter()</p>
+<p class="p1">✖ dplyr::lag()<span class="Apple-converted-space">    </span>masks stats::lag()</p>
+<p class="p1">ℹ Use the conflicted package (&amp;lt;http://conflicted.r-lib.org/&amp;gt;) to force all conflicts to become errors&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb3"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb3-1"&gt;&lt;a href="#cb3-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;library&lt;/span&gt;(here)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;here() starts at ~/GitHub/bioe215_working_data&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;section id="data-downloads" class="level2"&gt;</p>
+<p class="p1">&lt;h2 class="anchored" data-anchor-id="data-downloads"&gt;Data Downloads&lt;/h2&gt;</p>
+<p class="p1">&lt;p&gt;Data from: Shifts in timing and duration of breeding for 73 boreal bird species over four decades&lt;/p&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb5"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb5-1"&gt;&lt;a href="#cb5-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;download.file&lt;/span&gt;(&lt;span class="st"&gt;"https://dryad-assetstore-merritt-west.s3.us-west-2.amazonaws.com/ark%3A/13030/m5867r6c%7C1%7Cproducer/73_species.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Credential=AKIA2KERHV5E3OITXZXC%2F20231019%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20231019T213852Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-SignedHeaders=host&amp;amp;X-Amz-Signature=277d5265a2286c5d38f2863a2fe1437363173d1fa0c762ff6d4b7a8fb45adacc"&lt;/span&gt;,&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb5-2"&gt;&lt;a href="#cb5-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">              </span>&lt;span class="fu"&gt;here&lt;/span&gt;(&lt;span class="st"&gt;"data/73_species.csv"&lt;/span&gt;))&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb6"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb6-1"&gt;&lt;a href="#cb6-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_nestlings &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="fu"&gt;read_csv&lt;/span&gt;(&lt;span class="fu"&gt;here&lt;/span&gt;(&lt;span class="st"&gt;"data/73_species.csv"&lt;/span&gt;))&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Rows: 821413 Columns: 9</p>
+<p class="p1">── Column specification ────────────────────────────────────────────────────────</p>
+<p class="p1">Delimiter: ","</p>
+<p class="p1">chr (3): NestID, Species, BZ</p>
+<p class="p1">dbl (6): XEUREF, YEUREF, Day, Month, Year, Dayofyear</p>
+<p class="p2"><br></p>
+<p class="p1">ℹ Use `spec()` to retrieve the full column specification for this data.</p>
+<p class="p1">ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb8"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb8-1"&gt;&lt;a href="#cb8-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_traits &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="fu"&gt;read_csv&lt;/span&gt;(&lt;span class="fu"&gt;here&lt;/span&gt;(&lt;span class="st"&gt;"data/Traits_73_species.csv"&lt;/span&gt;))&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Rows: 73 Columns: 4</p>
+<p class="p1">── Column specification ────────────────────────────────────────────────────────</p>
+<p class="p1">Delimiter: ","</p>
+<p class="p1">chr (3): Abbreviation, Scientific name, Mig</p>
+<p class="p1">dbl (1): Broods</p>
+<p class="p2"><br></p>
+<p class="p1">ℹ Use `spec()` to retrieve the full column specification for this data.</p>
+<p class="p1">ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb10"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb10-1"&gt;&lt;a href="#cb10-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;avonet &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; readxl&lt;span class="sc"&gt;::&lt;/span&gt;&lt;span class="fu"&gt;read_excel&lt;/span&gt;(&lt;span class="fu"&gt;here&lt;/span&gt;(&lt;span class="st"&gt;"data/AVONET Supplementary dataset 1.xlsx"&lt;/span&gt;), &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb10-2"&gt;&lt;a href="#cb10-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt; <span class="Apple-converted-space">                            </span>&lt;span class="at"&gt;sheet =&lt;/span&gt; &lt;span class="st"&gt;"AVONET1_BirdLife"&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A4995 / R4995C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A5255 / R5255C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A5265 / R5265C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A5276 / R5276C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A6700 / R6700C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A6746 / R6746C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A7296 / R7296C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A7302 / R7302C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A7329 / R7329C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Expecting numeric in A7354 / R7354C1: got 'NA'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section id="are-nestlings-showing-up-earlier-in-the-year-over-time" class="level2"&gt;</p>
+<p class="p1">&lt;h2 class="anchored" data-anchor-id="are-nestlings-showing-up-earlier-in-the-year-over-time"&gt;Are nestlings showing up earlier in the year over time?&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb21"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb21-1"&gt;&lt;a href="#cb21-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;all_birds_trend &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; bor_nestlings &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb21-2"&gt;&lt;a href="#cb21-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;group_by&lt;/span&gt;(Year) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb21-3"&gt;&lt;a href="#cb21-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;summarize&lt;/span&gt;(&lt;span class="at"&gt;mean_doy =&lt;/span&gt; &lt;span class="fu"&gt;mean&lt;/span&gt;(Dayofyear))&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb21-4"&gt;&lt;a href="#cb21-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb21-5"&gt;&lt;a href="#cb21-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;ggplot&lt;/span&gt;(all_birds_trend, &lt;span class="fu"&gt;aes&lt;/span&gt;(Year, mean_doy)) &lt;span class="sc"&gt;+&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb21-6"&gt;&lt;a href="#cb21-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_point&lt;/span&gt;() &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb21-7"&gt;&lt;a href="#cb21-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_smooth&lt;/span&gt;(&lt;span class="at"&gt;method =&lt;/span&gt; &lt;span class="st"&gt;"lm"&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;`geom_smooth()` using formula = 'y ~ x'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output-display"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section id="breakdown-by-species" class="level2"&gt;</p>
+<p class="p1">&lt;h2 class="anchored" data-anchor-id="breakdown-by-species"&gt;Breakdown by species&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb23"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb23-1"&gt;&lt;a href="#cb23-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;species_trends &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; bor_nestlings &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb23-2"&gt;&lt;a href="#cb23-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;group_by&lt;/span&gt;(Year, Species) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb23-3"&gt;&lt;a href="#cb23-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;summarize&lt;/span&gt;(&lt;span class="at"&gt;mean_doy =&lt;/span&gt; &lt;span class="fu"&gt;mean&lt;/span&gt;(Dayofyear),&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb23-4"&gt;&lt;a href="#cb23-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">            </span>&lt;span class="at"&gt;.groups =&lt;/span&gt; &lt;span class="st"&gt;"drop"&lt;/span&gt;)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb23-5"&gt;&lt;a href="#cb23-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb23-6"&gt;&lt;a href="#cb23-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;ggplot&lt;/span&gt;(species_trends, &lt;span class="fu"&gt;aes&lt;/span&gt;(Year, mean_doy, &lt;span class="at"&gt;color =&lt;/span&gt; Species)) &lt;span class="sc"&gt;+&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb23-7"&gt;&lt;a href="#cb23-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_point&lt;/span&gt;() &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb23-8"&gt;&lt;a href="#cb23-8" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_smooth&lt;/span&gt;(&lt;span class="at"&gt;method =&lt;/span&gt; &lt;span class="st"&gt;"lm"&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;`geom_smooth()` using formula = 'y ~ x'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output-display"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Looking pretty useless for data presentation&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;How about only 5 species?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb25"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb25-1"&gt;&lt;a href="#cb25-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;data_richness &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; bor_nestlings &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-2"&gt;&lt;a href="#cb25-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;count&lt;/span&gt;(Species)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-3"&gt;&lt;a href="#cb25-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-4"&gt;&lt;a href="#cb25-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;most_rich &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; data_richness &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-5"&gt;&lt;a href="#cb25-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;arrange&lt;/span&gt;(&lt;span class="fu"&gt;desc&lt;/span&gt;(n)) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-6"&gt;&lt;a href="#cb25-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;slice&lt;/span&gt;(&lt;span class="dv"&gt;1&lt;/span&gt;&lt;span class="sc"&gt;:&lt;/span&gt;&lt;span class="dv"&gt;5&lt;/span&gt;)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-7"&gt;&lt;a href="#cb25-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-8"&gt;&lt;a href="#cb25-8" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;most_rich_trends &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; bor_nestlings &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-9"&gt;&lt;a href="#cb25-9" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;filter&lt;/span&gt;(Species &lt;span class="sc"&gt;%in%&lt;/span&gt; most_rich&lt;span class="sc"&gt;$&lt;/span&gt;Species) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-10"&gt;&lt;a href="#cb25-10" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;group_by&lt;/span&gt;(Species, Year) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-11"&gt;&lt;a href="#cb25-11" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;summarize&lt;/span&gt;(&lt;span class="at"&gt;mean_doy =&lt;/span&gt; &lt;span class="fu"&gt;mean&lt;/span&gt;(Dayofyear), &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-12"&gt;&lt;a href="#cb25-12" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">            </span>&lt;span class="at"&gt;.groups =&lt;/span&gt; &lt;span class="st"&gt;"drop"&lt;/span&gt;)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-13"&gt;&lt;a href="#cb25-13" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;?aes&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-14"&gt;&lt;a href="#cb25-14" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;ggplot&lt;/span&gt;(most_rich_trends, &lt;span class="fu"&gt;aes&lt;/span&gt;(Year, mean_doy, &lt;span class="at"&gt;color =&lt;/span&gt; Species)) &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-15"&gt;&lt;a href="#cb25-15" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_point&lt;/span&gt;() &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb25-16"&gt;&lt;a href="#cb25-16" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_smooth&lt;/span&gt;(&lt;span class="at"&gt;method =&lt;/span&gt; &lt;span class="st"&gt;"lm"&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;`geom_smooth()` using formula = 'y ~ x'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output-display"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;A general pattern, with one conflicting example. What species have the strongest trends?&lt;/p&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb27"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb27-1"&gt;&lt;a href="#cb27-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;# Finds the slope of the relationship between y and x&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-2"&gt;&lt;a href="#cb27-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;trend &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="cf"&gt;function&lt;/span&gt;(x, y) {&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-3"&gt;&lt;a href="#cb27-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>xy_lm &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="fu"&gt;lm&lt;/span&gt;(y &lt;span class="sc"&gt;~&lt;/span&gt; x)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-4"&gt;&lt;a href="#cb27-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;coef&lt;/span&gt;(xy_lm)[&lt;span class="dv"&gt;2&lt;/span&gt;]&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-5"&gt;&lt;a href="#cb27-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;}&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-6"&gt;&lt;a href="#cb27-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-7"&gt;&lt;a href="#cb27-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;# Calculate the trend for all species&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-8"&gt;&lt;a href="#cb27-8" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_by_year &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; bor_nestlings &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-9"&gt;&lt;a href="#cb27-9" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;group_by&lt;/span&gt;(Year, Species) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-10"&gt;&lt;a href="#cb27-10" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;summarize&lt;/span&gt;(&lt;span class="at"&gt;BirdByYear =&lt;/span&gt; &lt;span class="fu"&gt;n&lt;/span&gt;()) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb27-11"&gt;&lt;a href="#cb27-11" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;ungroup&lt;/span&gt;()&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;`summarise()` has grouped output by 'Year'. You can override using the</p>
+<p class="p1">`.groups` argument.&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb29"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb29-1"&gt;&lt;a href="#cb29-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_by_year&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stdout"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;# A tibble: 2,330 × 3</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Year Species BirdByYear</p>
+<p class="p1"><span class="Apple-converted-space">   </span>&amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;<span class="Apple-converted-space">        </span>&amp;lt;int&amp;gt;</p>
+<p class="p1"><span class="Apple-converted-space"> </span>1<span class="Apple-converted-space">  </span>1975 ACCGEN <span class="Apple-converted-space">        </span>278</p>
+<p class="p1"><span class="Apple-converted-space"> </span>2<span class="Apple-converted-space">  </span>1975 ACCNIS<span class="Apple-converted-space">          </span>34</p>
+<p class="p1"><span class="Apple-converted-space"> </span>3<span class="Apple-converted-space">  </span>1975 AEGFUN<span class="Apple-converted-space">          </span>84</p>
+<p class="p1"><span class="Apple-converted-space"> </span>4<span class="Apple-converted-space">  </span>1975 ALCTOR <span class="Apple-converted-space">        </span>169</p>
+<p class="p1"><span class="Apple-converted-space"> </span>5<span class="Apple-converted-space">  </span>1975 APUAPU <span class="Apple-converted-space">        </span>102</p>
+<p class="p1"><span class="Apple-converted-space"> </span>6<span class="Apple-converted-space">  </span>1975 ASIOTU<span class="Apple-converted-space">          </span>40</p>
+<p class="p1"><span class="Apple-converted-space"> </span>7<span class="Apple-converted-space">  </span>1975 BUTBUT <span class="Apple-converted-space">        </span>150</p>
+<p class="p1"><span class="Apple-converted-space"> </span>8<span class="Apple-converted-space">  </span>1975 BUTLAG<span class="Apple-converted-space">          </span>32</p>
+<p class="p1"><span class="Apple-converted-space"> </span>9<span class="Apple-converted-space">  </span>1975 CARERY<span class="Apple-converted-space">          </span>33</p>
+<p class="p1">10<span class="Apple-converted-space">  </span>1975 CEPGRY <span class="Apple-converted-space">        </span>430</p>
+<p class="p1"># ℹ 2,320 more rows&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb31"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb31-1"&gt;&lt;a href="#cb31-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_trends &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; species_trends &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-2"&gt;&lt;a href="#cb31-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;group_by&lt;/span&gt;(Species) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-3"&gt;&lt;a href="#cb31-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;summarize&lt;/span&gt;(&lt;span class="at"&gt;doy_trend =&lt;/span&gt; &lt;span class="fu"&gt;trend&lt;/span&gt;(Year, mean_doy))&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-4"&gt;&lt;a href="#cb31-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-5"&gt;&lt;a href="#cb31-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;soi &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="fu"&gt;c&lt;/span&gt;(&lt;span class="st"&gt;"ARDCIN"&lt;/span&gt;, &lt;span class="st"&gt;"LARMIN"&lt;/span&gt;)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-6"&gt;&lt;a href="#cb31-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;species_trends &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-7"&gt;&lt;a href="#cb31-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;filter&lt;/span&gt;(Species &lt;span class="sc"&gt;%in%&lt;/span&gt; soi) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-8"&gt;&lt;a href="#cb31-8" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;ggplot&lt;/span&gt;(&lt;span class="fu"&gt;aes&lt;/span&gt;(Year, mean_doy, &lt;span class="at"&gt;color =&lt;/span&gt; Species)) &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-9"&gt;&lt;a href="#cb31-9" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_point&lt;/span&gt;() &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb31-10"&gt;&lt;a href="#cb31-10" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_smooth&lt;/span&gt;(&lt;span class="at"&gt;method =&lt;/span&gt; &lt;span class="st"&gt;"lm"&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;`geom_smooth()` using formula = 'y ~ x'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output-display"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;Find the species with the most positive and most negative trends, then plot just those.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb33"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb33-1"&gt;&lt;a href="#cb33-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;nrow_bor_trends &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="fu"&gt;nrow&lt;/span&gt;(bor_trends) &lt;span class="co"&gt;# Use this later&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb33-2"&gt;&lt;a href="#cb33-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_extreme &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; bor_trends &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb33-3"&gt;&lt;a href="#cb33-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;arrange&lt;/span&gt;(&lt;span class="fu"&gt;desc&lt;/span&gt;(doy_trend)) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; <span class="Apple-converted-space">  </span>&lt;span class="co"&gt;# Sort by the day of year trend&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb33-4"&gt;&lt;a href="#cb33-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;slice&lt;/span&gt;(&lt;span class="fu"&gt;c&lt;/span&gt;(&lt;span class="dv"&gt;1&lt;/span&gt;,nrow_bor_trends)) <span class="Apple-converted-space">  </span>&lt;span class="co"&gt;# Keep just the first (most negative trend) and last (most positive trend) rows&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb33-5"&gt;&lt;a href="#cb33-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_extreme&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stdout"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;# A tibble: 2 × 2</p>
+<p class="p1"><span class="Apple-converted-space">  </span>Species doy_trend</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&amp;lt;chr&amp;gt; <span class="Apple-converted-space">      </span>&amp;lt;dbl&amp;gt;</p>
+<p class="p1">1 RIPRIP<span class="Apple-converted-space">      </span>0.510</p>
+<p class="p1">2 ARDCIN <span class="Apple-converted-space">    </span>-1.57 &lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb35"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb35-1"&gt;&lt;a href="#cb35-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;?&lt;span class="st"&gt;`&lt;/span&gt;&lt;span class="at"&gt;%in%&lt;/span&gt;&lt;span class="st"&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stdout"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Help on topic '%in%' was found in the following packages:</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>Package <span class="Apple-converted-space">              </span>Library</p>
+<p class="p1"><span class="Apple-converted-space">  </span>bit64 <span class="Apple-converted-space">                </span>/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library</p>
+<p class="p1"><span class="Apple-converted-space">  </span>base<span class="Apple-converted-space">                  </span>/Library/Frameworks/R.framework/Resources/library</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">Using the first match ...&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb37"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb37-1"&gt;&lt;a href="#cb37-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;# Now plot them&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb37-2"&gt;&lt;a href="#cb37-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_extreme2 &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="fu"&gt;c&lt;/span&gt;(&lt;span class="st"&gt;"RIPRIP"&lt;/span&gt;, &lt;span class="st"&gt;"ARDCIN"&lt;/span&gt;)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb37-3"&gt;&lt;a href="#cb37-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;species_trends &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb37-4"&gt;&lt;a href="#cb37-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;filter&lt;/span&gt;(Species &lt;span class="sc"&gt;%in%&lt;/span&gt; bor_extreme&lt;span class="sc"&gt;$&lt;/span&gt;Species) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb37-5"&gt;&lt;a href="#cb37-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;ggplot&lt;/span&gt;(&lt;span class="fu"&gt;aes&lt;/span&gt;(Year, mean_doy, &lt;span class="at"&gt;color =&lt;/span&gt; Species)) &lt;span class="sc"&gt;+&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb37-6"&gt;&lt;a href="#cb37-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">    </span>&lt;span class="fu"&gt;geom_point&lt;/span&gt;() &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb37-7"&gt;&lt;a href="#cb37-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">    </span>&lt;span class="fu"&gt;geom_smooth&lt;/span&gt;(&lt;span class="at"&gt;method =&lt;/span&gt; &lt;span class="st"&gt;"lm"&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;`geom_smooth()` using formula = 'y ~ x'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output-display"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section id="adding-in-avonet" class="level2"&gt;</p>
+<p class="p1">&lt;h2 class="anchored" data-anchor-id="adding-in-avonet"&gt;Adding in AVONET&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="cell"&gt;</p>
+<p class="p1">&lt;div class="sourceCode cell-code" id="cb39"&gt;&lt;pre class="sourceCode r code-with-copy"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb39-1"&gt;&lt;a href="#cb39-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;# First, select and rename important columns&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-2"&gt;&lt;a href="#cb39-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;avonet_size &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="fu"&gt;select&lt;/span&gt;(avonet, &lt;span class="at"&gt;SciName =&lt;/span&gt; Species1, &lt;span class="at"&gt;Mass_g =&lt;/span&gt; Mass)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-3"&gt;&lt;a href="#cb39-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_sciname &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="fu"&gt;select&lt;/span&gt;(bor_traits, &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-4"&gt;&lt;a href="#cb39-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">                      </span>&lt;span class="at"&gt;Species =&lt;/span&gt; Abbreviation, &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-5"&gt;&lt;a href="#cb39-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">                      </span>&lt;span class="at"&gt;SciName =&lt;/span&gt; &lt;span class="st"&gt;"Scientific name"&lt;/span&gt;)&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-6"&gt;&lt;a href="#cb39-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-7"&gt;&lt;a href="#cb39-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-8"&gt;&lt;a href="#cb39-8" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;bor_trends_size &lt;span class="ot"&gt;&amp;lt;-&lt;/span&gt; bor_trends &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-9"&gt;&lt;a href="#cb39-9" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;left_join&lt;/span&gt;(bor_sciname, &lt;span class="at"&gt;by =&lt;/span&gt; &lt;span class="st"&gt;"Species"&lt;/span&gt;) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-10"&gt;&lt;a href="#cb39-10" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;left_join&lt;/span&gt;(avonet_size, &lt;span class="at"&gt;by =&lt;/span&gt; &lt;span class="st"&gt;"SciName"&lt;/span&gt;) &lt;span class="sc"&gt;%&amp;gt;%&lt;/span&gt; &lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-11"&gt;&lt;a href="#cb39-11" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;mutate&lt;/span&gt;(&lt;span class="at"&gt;abs_trend =&lt;/span&gt; &lt;span class="fu"&gt;abs&lt;/span&gt;(doy_trend))&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-12"&gt;&lt;a href="#cb39-12" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-13"&gt;&lt;a href="#cb39-13" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;?left_join&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-14"&gt;&lt;a href="#cb39-14" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="co"&gt;# Plot it&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-15"&gt;&lt;a href="#cb39-15" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;ggplot&lt;/span&gt;(bor_trends_size, &lt;span class="fu"&gt;aes&lt;/span&gt;(Mass_g, abs_trend)) &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-16"&gt;&lt;a href="#cb39-16" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_point&lt;/span&gt;() &lt;span class="sc"&gt;+&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span id="cb39-17"&gt;&lt;a href="#cb39-17" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;span class="fu"&gt;geom_smooth&lt;/span&gt;(&lt;span class="at"&gt;method =&lt;/span&gt; &lt;span class="st"&gt;"lm"&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;button title="Copy to Clipboard" class="code-copy-button"&gt;&lt;i class="bi"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/pre&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;`geom_smooth()` using formula = 'y ~ x'&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Removed 7 rows containing non-finite values (`stat_smooth()`).&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output cell-output-stderr"&gt;</p>
+<p class="p1">&lt;pre&gt;&lt;code&gt;Warning: Removed 7 rows containing missing values (`geom_point()`).&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="cell-output-display"&gt;</p>
+<p class="p1">&lt;p&gt;&lt;img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/main&gt;</p>
+<p class="p1">&lt;!-- /main column --&gt;</p>
+<p class="p1">&lt;script id="quarto-html-after-body" type="application/javascript"&gt;</p>
+<p class="p1">window.document.addEventListener("DOMContentLoaded", function (event) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const toggleBodyColorMode = (bsSheetEl) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const mode = bsSheetEl.getAttribute("data-mode");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const bodyEl = window.document.querySelector("body");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (mode === "dark") {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bodyEl.classList.add("quarto-dark");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bodyEl.classList.remove("quarto-light");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bodyEl.classList.add("quarto-light");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bodyEl.classList.remove("quarto-dark");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const toggleBodyColorPrimary = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (bsSheetEl) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>toggleBodyColorMode(bsSheetEl);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>toggleBodyColorPrimary(); <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>const icon = "";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const anchorJS = new window.AnchorJS();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>anchorJS.options = {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>placement: 'right',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>icon: icon</p>
+<p class="p1"><span class="Apple-converted-space">  </span>};</p>
+<p class="p1"><span class="Apple-converted-space">  </span>anchorJS.add('.anchored');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const isCodeAnnotation = (el) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>for (const clz of el.classList) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (clz.startsWith('code-annotation-')) {<span class="Apple-converted-space">                     </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>return true;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>return false;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const clipboard = new window.ClipboardJS('.code-copy-button', {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text: function(trigger) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const codeEl = trigger.previousElementSibling.cloneNode(true);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>for (const childEl of codeEl.children) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (isCodeAnnotation(childEl)) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>childEl.remove();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return codeEl.innerText;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>clipboard.on('success', function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// button target</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const button = e.trigger;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// don't keep focus</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.blur();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// flash "checked"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.classList.add('code-copy-button-checked');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var currentTitle = button.getAttribute("title");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.setAttribute("title", "Copied!");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let tooltip;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (window.bootstrap) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>button.setAttribute("data-bs-toggle", "tooltip");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>button.setAttribute("data-bs-placement", "left");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>button.setAttribute("data-bs-title", "Copied!");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tooltip = new bootstrap.Tooltip(button,<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{ trigger: "manual",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>customClass: "code-copy-button-tooltip",</p>
+<p class="p1"><span class="Apple-converted-space">          </span>offset: [0, -8]});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tooltip.show(); <span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>setTimeout(function() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (tooltip) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tooltip.hide();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button.removeAttribute("data-bs-title");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button.removeAttribute("data-bs-toggle");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button.removeAttribute("data-bs-placement");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>button.setAttribute("title", currentTitle);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>button.classList.remove('code-copy-button-checked');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// clear code selection</p>
+<p class="p1"><span class="Apple-converted-space">    </span>e.clearSelection();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function tippyHover(el, contentFn) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const config = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>allowHTML: true,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: contentFn,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>maxWidth: 500,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>delay: 100,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>arrow: false,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>appendTo: function(el) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>return el.parentElement;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>interactive: true,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>interactiveBorder: 10,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>theme: 'quarto',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>placement: 'bottom-start'</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.tippy(el, config);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>for (var i=0; i&lt;noterefs.length; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const ref = noterefs[i];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>tippyHover(ref, function() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// use id or data attribute instead here</p>
+<p class="p1"><span class="Apple-converted-space">      </span>let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>try { href = new URL(href).hash; } catch {}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const id = href.replace(/^#\/?/, "");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const note = window.document.getElementById(id);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return note.innerHTML;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>let selectedAnnoteEl;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const selectorForAnnotation = ( cell, annotation) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let cellAttr = 'data-code-cell="' + cell + '"';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let lineAttr = 'data-code-annotation="' +<span class="Apple-converted-space">  </span>annotation + '"';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const selector = 'span[' + cellAttr + '][' + lineAttr + ']';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return selector;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const selectCodeLines = (annoteEl) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const doc = window.document;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const targetCell = annoteEl.getAttribute("data-target-cell");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const targetAnnotation = annoteEl.getAttribute("data-target-annotation");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const lines = annoteSpan.getAttribute("data-code-lines").split(",");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const lineIds = lines.map((line) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>return targetCell + "-" + line;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>})</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let top = null;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let height = null;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let parent = null;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (lineIds.length &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>//compute the position of the single el (top and bottom and make a div)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const el = window.document.getElementById(lineIds[0]);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top = el.offsetTop;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height = el.offsetHeight;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>parent = el.parentElement.parentElement;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (lineIds.length &gt; 1) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const bottom = lastEl.offsetTop + lastEl.offsetHeight;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height = bottom - top;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (top !== null &amp;&amp; height !== null &amp;&amp; parent !== null) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// cook up a div (if necessary) and position it<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>let div = window.document.getElementById("code-annotation-line-highlight");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (div === null) {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>div = window.document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">              </span>div.setAttribute("id", "code-annotation-line-highlight");</p>
+<p class="p1"><span class="Apple-converted-space">              </span>div.style.position = 'absolute';</p>
+<p class="p1"><span class="Apple-converted-space">              </span>parent.appendChild(div);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>div.style.top = top - 2 + "px";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>div.style.height = height + 4 + "px";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (gutterDiv === null) {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>gutterDiv = window.document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">              </span>gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");</p>
+<p class="p1"><span class="Apple-converted-space">              </span>gutterDiv.style.position = 'absolute';</p>
+<p class="p1"><span class="Apple-converted-space">              </span>const codeCell = window.document.getElementById(targetCell);</p>
+<p class="p1"><span class="Apple-converted-space">              </span>const gutter = codeCell.querySelector('.code-annotation-gutter');</p>
+<p class="p1"><span class="Apple-converted-space">              </span>gutter.appendChild(gutterDiv);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gutterDiv.style.top = top - 2 + "px";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gutterDiv.style.height = height + 4 + "px";</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>selectedAnnoteEl = annoteEl;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>};</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const unselectCodeLines = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>elementsIds.forEach((elId) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const div = window.document.getElementById(elId);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (div) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>div.remove();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>selectedAnnoteEl = undefined;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>};</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Attach click handler to the DT</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>for (const annoteDlNode of annoteDls) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>annoteDlNode.addEventListener('click', (event) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const clickedEl = event.target;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (clickedEl !== selectedAnnoteEl) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>unselectCodeLines();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (activeEl) {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>activeEl.classList.remove('code-annotation-active');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>selectCodeLines(clickedEl);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>clickedEl.classList.add('code-annotation-active');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Unselect the line</p>
+<p class="p1"><span class="Apple-converted-space">            </span>unselectCodeLines();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>clickedEl.classList.remove('code-annotation-active');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const findCites = (el) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const parentEl = el.parentElement;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (parentEl) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const cites = parentEl.dataset.cites;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (cites) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>el,</p>
+<p class="p1"><span class="Apple-converted-space">          </span>cites: cites.split(' ')</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return findCites(el.parentElement)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return undefined;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>};</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>for (var i=0; i&lt;bibliorefs.length; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const ref = bibliorefs[i];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const citeInfo = findCites(ref);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (citeInfo) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tippyHover(citeInfo.el, function() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>var popup = window.document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>citeInfo.cites.forEach(function(cite) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>var citeDiv = window.document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>citeDiv.classList.add('hanging-indent');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>citeDiv.classList.add('csl-entry');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>var biblioDiv = window.document.getElementById('ref-' + cite);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (biblioDiv) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>citeDiv.innerHTML = biblioDiv.innerHTML;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>popup.appendChild(citeDiv);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return popup.innerHTML;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/div&gt; &lt;!-- /content --&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
